@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+
+.watch {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(homepict.jpg);
+    background-size: cover;
+    padding-left: 50px;
+    padding-bottom: 135px;
+    padding-top: 135px;
+}
+
+.watch h1 {
+    font-weight: bold;
+    font-size: 58px;
+    width: 40%;
+}
+
+.watch p {
+    font-size: 24px;
+    width: 40%;
+    font-weight: lighter;
+}
+
+/* End Header */
+
+/* Card Film */
+
+.film-card {
+    height: 380px;
+    gap: 1rem;
+    overflow-x: scroll;
+    cursor: pointer;
+}
+
+.film-card::-webkit-scrollbar {
+    /* Menghilangkan Scrollbar */
+    display: none;
+}
+
+/* End Card Film */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Style untuk gambar di dalam overlay/modal */
+.overlay img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+
+/* Responsive */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 92%;
+    }
+
+    .watch {
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(homepict.jpg);
+        background-size: cover;
+        padding-left: 50px;
+        padding-bottom: 125px;
+        padding-top: 125px;
+    }
+
+    .watch h1 {
+        font-weight: bold;
+        font-size: 58px;
+        width: 60%;
+    }
+
+    .get-app img {
+        height: 270px;
+    }
+
+    .desc-get-app p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 89%;
+    }
+
+    .watch {
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(homepict.jpg);
+        background-size: cover;
+        padding-left: 50px;
+        padding-bottom: 80px;
+        padding-top: 80px;
+        background-position: center;
+    }
+
+    .watch h1 {
+        font-weight: bold;
+        font-size: 28px;
+        width: 60%;
+    }
+
+    .watch p {
+        font-size: 12px;
+    }
+
+    .film-card {
+        height: 340px;
+    }
+
+    .get-app img {
+        height: 200px;
+    }
+
+    .get-flex {
+        flex-direction: column;
+    }
+
+    .get-flex2 {
+        flex-direction: column-reverse;
+    }
+
+    .desc-get-app {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .desc-get-app p {
+        margin: 10px auto;
+    }
+}
